@@ -1,11 +1,9 @@
-import fr.projets.java.cardgame.*;
-
 public class Carte
 {
 	private final String name;
-	private final AttributCarte attribut;
+	private final String attribut;
 	
-	public Carte(String name, AttributCarte attribut)
+	public Carte(String name, String attribut)
 	{
 		this.name = name;
 		this.attribut = attribut;
@@ -16,7 +14,7 @@ public class Carte
 		return this.name;
 	}
 
-	public AttributCarte getAttribut()
+	public String getAttribut()
 	{
 		return this.attribut;
 	}

@@ -1,13 +1,11 @@
-import fr.projets.java.cardgame.*;
-
 public class CarteMonstre extends Carte
 {
 	private final int level;
-	private final TypeCarte type;
+	private final String type;
 	private int attack;
 	private int defense;
 	
-	public CarteMonstre(String name, AttributCarte attribut, int level, TypeCarte type,int attack, int defense)
+	public CarteMonstre(String name, String attribut, int level, String type,int attack, int defense)
 	{
 		super(name, attribut);
 		this.level = level;
@@ -41,7 +39,7 @@ public class CarteMonstre extends Carte
 		return this.level;
 	}
 
-	public TypeCarte getType()
+	public String getType()
 	{
 		return this.type;
 	}
